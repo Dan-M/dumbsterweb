@@ -1,0 +1,12 @@
+<div class="lift:surround?with=default;at=content">
+  <h2>Test sending mails to Dumbster</h2>
+  <div id=mailform>
+    <lift:testMail.send form="POST">
+    	<mail:from /> <br />
+    	<mail:to /> <br />
+    	<mail:subject /> <br />
+    	<mail:body /> <br />
+    	<mail:send />
+    </lift:testMail.send>
+  </div>
+</div>

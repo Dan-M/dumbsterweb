@@ -1,0 +1,30 @@
+<div class="lift:surround?with=default;at=content">
+	<h2>Welcome to Dumbster Web</h2>
+	<div>
+		Dumbster Web is a simple web application that wraps <a
+			href="http://quintanasoft.com/dumbster/">Dumbster</a>, a fake SMTP
+		Server. It's purpose is to support integration testing of applications
+		that need to send emails.
+	</div>
+	<br />
+	<div>
+		If you see this page, a <a
+			href="http://quintanasoft.com/dumbster/javadoc/index.html">SimpleSmtpServer</a>
+		has already been started. Configure the application to be tested to use
+		<ul>
+			<div class="lift:hello.server">
+			<li>mail.smtp.host = <span id="hostname">hostName</span></li>
+			</div>
+			<div class="lift:hello.port">
+			<li>mail.smtp.port = <span id="port">port</span></li>
+			</div>
+		</ul>
+		and deploy it for system / integration testing.
+	</div>
+	<br />
+	<div>
+		You can now either <a href="test.html">Test</a> the SMTP server by sending
+		a mail to it from this application or you can check the <a href="mails.html">Mails</a>
+		that the server has already recieved.
+	</div>
+</div>

@@ -1,0 +1,26 @@
+<div class="lift:surround?with=default;at=content">
+  <h2>Inbox</h2>
+  
+  <lift:Inbox />
+
+  <table id="inbox" class="tablesorter">
+  	<thead>
+  		<tr>
+  			<th width="15%">From</th>
+  			<th width="15%">To</th>
+  			<th width="20%">Subject</th>
+  			<th width="50%">Body</th>
+  		</tr>
+  	</thead>
+  	<tbody>
+  		<lift:Inbox.mails>
+	  	<tr>
+	  		<td><mails:from /></td>
+	  		<td><mails:to /></td>
+	  		<td><mails:subject /></td>
+	  		<td><pre><mails:body /></pre></td>	  			  		
+	  	</tr>
+	  	</lift:Inbox.mails>
+  	</tbody>
+  </table>
+</div>
